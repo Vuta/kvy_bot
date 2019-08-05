@@ -7,5 +7,7 @@ defmodule KvyBotWeb.Router do
 
   scope "/api", KvyBotWeb do
     pipe_through :api
+
+    post "/vacations", VacationsController, :create
   end
 end
